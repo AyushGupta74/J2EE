@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="./js/validate.js"></script>
+</head>
+<body>
+<form action='register' method='post'>
+     Name: <input type="text" name="name" id="nm"><br>
+     email: <input type="email" name="email" id="email"><br>
+     user name: <input type="text" name="uname" id="unm"><br>
+     password: <input type="password" name="pass" id="pass"><br>
+     Confirm password: <input type="password" name="pass" id="pass"><br>
+     Gender: <input type="radio" name="gender" id="male" value="male">
+     <label for="male">Male</label>
+     <input type="radio" name="gender" id="female" value="female">
+     <label for="male">Female</label><br>
+     hobbies:
+     <input type="checkbox" name="hobbies" id="reading" value="reading">
+     <label for="reading">Reading</label>
+     <input type="checkbox" name="hobbies" id="biking" value="biking">
+     <label for="biking">Biking</label>
+     <input type="checkbox" name="hobbies" id="trekking" value="trekking">
+     <label for="trekking">trekking</label>
+     <input type="checkbox" name="hobbies" id="coding" value="coding">
+     <label for="coding">Coding</label><br>
+     city:<select name="city">
+     <option value="pune">Pune</option>
+     <option value="mumbai">Mumbai</option>
+     <option value="chennai">chennai</option>
+     <option value="banglore">banglore</option>
+     </select>
+     <button type="submit" name="btn" id="btn">Login</button>
+</form>
+</body>
+</html>
