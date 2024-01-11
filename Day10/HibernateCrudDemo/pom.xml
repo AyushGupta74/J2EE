@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>HibernateCrudDemo</groupId>
+  <artifactId>HibernateCrudDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>HibernateCrudDemo</name>
+  <description>HibernateCrudDemo</description>
+  <properties>
+      <hibernate.version>5.4.21.Final</hibernate.version>
+      <hibernate.validator>5.4.1.Final</hibernate.validator>
+  </properties>
+  <dependencies>
+     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>${hibernate.version}</version>
+		</dependency>
+     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>${hibernate.validator}</version>
+		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.29</version>
+		</dependency>
+       <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.11</version>
+	</dependency>
+
+  
+  
+  </dependencies>
+</project>
