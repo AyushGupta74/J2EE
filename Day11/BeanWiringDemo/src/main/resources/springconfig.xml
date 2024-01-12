@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	
+  <!-- <bean id="addr1" class="com.demo.model.Address">
+     <property name="addrid" value="1"></property>
+     <property name="street" value="baner"></property>
+     <property name="city" value="Pune"></property>
+  </bean> -->	
+  <bean id="p1" class="com.demo.model.person">
+     <property name="pid" value="1"></property>
+     <property name="pname" value="xxxx"></property>
+  </bean>
+  <bean id="e1" class="com.demo.model.Employee" parent="p1">
+     <property name="dept" value="HR"></property>
+     <property name="desg" value="mgr"></property>
+  </bean>
+  <bean id="addr" class="com.demo.model.Address">
+     <property name="addrid" value="11"></property>
+     <property name="street" value="Vanaz"></property>
+     <property name="city" value="Mumbai"></property>
+  </bean>	
+  <bean id="u1" class="com.demo.model.MyUSer" autowire="byName">
+      <property name="uid" value="11"></property>
+      <property name="uname" value="xxxx"></property>
+      <!-- <property name="addr" ref="addr"></property> -->
+  </bean>
+  <bean id="u2" class="com.demo.model.MyUSer" autowire="constructor">
+      <constructor-arg index="0" value="14"></constructor-arg>
+      <constructor-arg index="1" value="yyyy"></constructor-arg>
+  </bean>
+  <bean id="s1" class="com.demo.model.Skill">
+   <property name="skid" value="12"></property>
+    <property name="skname" value="xxxx"></property>
+     <property name="experience" value="12"></property>
+  </bean>
+  <bean id="s2" class="com.demo.model.Skill">
+   <property name="skid" value="13"></property>
+    <property name="skname" value="JAVA"></property>
+     <property name="experience" value="12"></property>
+  </bean>
+  <bean id="s3" class="com.demo.model.Skill">
+   <property name="skid" value="14"></property>
+    <property name="skname" value="Python"></property>
+     <property name="experience" value="20"></property>
+  </bean>
+  <bean id="st1" class="com.demo.model.Student">
+   <property name="sid" value="100"></property>
+    <property name="name" value="Rajat"></property>
+     <property name="hobbies">
+     <list>
+        <value>Reading</value>
+        <value>Biking</value>
+        <value>coding</value>
+     </list>
+     </property>
+     <property name="slist">
+     <list>
+        <ref bean="s1"></ref>
+        <ref bean="s2"></ref>
+        <ref bean="s2"></ref>
+     </list>
+     </property>
+  </bean>
+  
+  
+  
+  
+  
+</beans>

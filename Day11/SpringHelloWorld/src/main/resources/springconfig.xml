@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	
+	<bean id="hw" class="com.demo.model.HelloWorld">
+	</bean>
+	<bean id="u1" class="com.demo.model.MyUser" scope="prototype">
+	   <property name="uid" value="11"></property>
+	   <property name="uname" value="Kishori"></property>
+	</bean>
+	<bean id="u2" class="com.demo.model.MyUser">
+	   <property name="uid" value="12"></property>
+	   <property name="uname" value="Rajan"></property>
+	</bean>
+	<bean id="u3" class="com.demo.model.MyUser">
+	  <constructor-arg index="0" value="13"></constructor-arg>
+	  <constructor-arg index="1" value="Rajas"></constructor-arg>
+	</bean>
+	
+</beans>
