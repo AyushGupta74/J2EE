@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SpringResourceBundling</groupId>
+  <artifactId>SpringResourceBundling</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpringResourceBundling</name>
+  <description>SpringResourceBundling</description>
+  <properties>
+		<springframework.version>5.3.24</springframework.version>
+		<jackson.version>2.7.5</jackson.version>
+		<jstl.version>1.2</jstl.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+	</dependencies>
+</project>
