@@ -1,0 +1,8 @@
+.footer{
+    position:fixed;
+    bottom:0
+}
+.header{
+    background-color:blue;
+    color:white
+}
